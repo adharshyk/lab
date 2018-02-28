@@ -1,0 +1,21 @@
+nouser=`who | wc -l`
+echo "User name: $USER (Login name: $LOGNAME)" 
+echo "Current Shell: $SHELL" 
+echo "Home Directory: $HOME"
+echo "Your O/s Type: $OSTYPE"
+echo "PATH SETTINGS: $PATH"
+echo "Current directory: `pwd`"
+echo "Currently Logged: $nouser user(s)"
+echo "OS:`cat /etc/os-release`"
+echo "kernel version:`uname -v`"
+echo "kernel release:`uname -r`"
+echo "Available Shells:`cat /etc/shells`"
+echo "Computer Mouse Information:`xinput --list-props "Logitech USB Optical Mouse"`"
+echo "Computer CPU Information:`cat /proc/cpuinfo`"
+echo "Computer Memory Information:`cat /proc/meminfo`"
+echo "Hard disk information:"
+echo "File System (Mount):`cat /proc/mounts`"
+
+
+
+

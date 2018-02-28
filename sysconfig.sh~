@@ -1,0 +1,9 @@
+echo "os type:$OSTYPE"
+echo "current path setting:$PATH"
+echo "current working directory:`pwd`"
+echo "os version,release number and kernel version:`uname -a`"
+echo "all available shells:`cat /etc/shells`"
+echo "cpu "info":`cat /proc/cpuinfo`"
+echo "memory "info":`cat /proc/meminfo`"
+echo "harddisk "indo":`lsblk`"
+

@@ -1,0 +1,19 @@
+#!/bin/bash
+if [ $# -ne 2 ]
+then
+	echo "Useage:addnames [classlist] [username]"
+elif ! [ -f $1 ]
+then
+	echo "file named $1 is not found"
+else
+	count=`grep -w $2 $1|wc -w`
+	if [ $count -eq 0 ]
+	then
+		echo "$2" >> "$1"
+	else
+		echo "Username already exists"
+	fi
+fi
+		
+
+
