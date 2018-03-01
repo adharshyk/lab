@@ -15,6 +15,5 @@ echo "cpu "info":"
 "`cat /proc/cpuinfo`"
 echo "memory "info":"
 "`cat /proc/meminfo`"
-echo "harddisk "indo":"
-"`lsblk`"
+
 
